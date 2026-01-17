@@ -6,12 +6,20 @@
 #include <iostream>
 using namespace std;
 int main() {
-
-    string name = "Jane Smith"
-    int apples = 100
-    double pricePerApple = 0.25
+//Apple Orchard
+    string name = "Jane Smith" ;
+    int apples = 100 ;
+    double pricePerApple = 0.25 ;
     
     cout << "Welcome to " << name;
-    cout << " 's apple orchard." << endl;
-    
+    cout << "'s apple orchard." << endl;
+    cout << "We have " << apples;
+    cout << " apples in stock." << endl;
+    cout << "Apples are currently $";
+    cout << pricePerApple << " each." << endl;
+//Calculate the total price of the apples
+    double totalPrice = apples * pricePerApple;
+    cout << "If you want them all, that will be $" << totalPrice<< endl;
+
+    return 0;
 }
