@@ -12,6 +12,7 @@ int main() {
 // Set up Variables
     string first_name, last_name, full_name; //Customer's name
     string product = "apples"; 
+    int amount_purchased;
     double costs_each = 0.25; //Cost per apple 
     double total_cost; //Total cost
     
@@ -27,9 +28,19 @@ int main() {
     cout << " apples in stock." << endl;
     cout << "Apples are currently $";
     cout << pricePerApple << " each." << endl;
-//Calculate the total price of the apples
-    double totalPrice = apples * pricePerApple;
-    cout << "If you want them all, that will be $" << totalPrice<< endl;
+
+    //Ask how much they'd like to purchase? 
+    cout  << " How many " << product << " would you like today? ";
+    cin >> amount_purchased;
+
+    //Calculate
+    total_cost = amount_purchased * costs_each;
+
+    //Give the result
+    cout << "For " << amount_purchased << " " << product << endl; 
+    cout << "That will be: $" << total_cost << endl;
+    cout << "Thank you for shopping with us!" << endl;
+
     
     cout << endl;
     return 0;
